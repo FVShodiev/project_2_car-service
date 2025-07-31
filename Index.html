@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АвтоХелп - Главная</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="icon" href="https://img.icons8.com/ios/50/car-service.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://img.icons8.com/ios/50/car-service.png" type="image/x-icon">
+</head>
+<body>
+    
+    <header>
+        <div class="Logo"><img src="img/Logo.png" alt="logo-avtoservisa"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="pages/services.html">Услуги</a></li>
+                <li><a href="pages/contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="Profil" id="openModal">
+            <button class="button">Профиль</button>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle" class="modalTitle">Вход</h2>
+                <form id="authForm">
+                    <input type="text" id="username" placeholder="Имя пользователя" required>
+                    <input type="password" id="password" placeholder="Пароль" required>
+                    <button type="submit">Отправить</button>
+                    <p id="toggleForm">Нет аккаунта? <a href="#" id="switchToRegister">Зарегистрироваться</a></p>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="Block2"> 
+            <div class="Block3">
+                <div class="Block4">
+                    <h2>Ваш надежный автосервис</h2>
+                    <p>Качественные услуги по ремонту и обслуживанию автомобилей.</p>
+                    <form action="pages/services.html">
+                        <button class="servis">Посмотреть услуги</button>
+                    </form>
+                </div>
+            </div>
+            <div class="Karta">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34909.89766647752!2d60.528250098203976!3d56.848197656315136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16efe39cade11%3A0x475383a881a97544!2z0JDQktCi0J5IRUxQ!5e0!3m2!1sru!2sru!4v1732967486543!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="Block5">
+            <div class="Uslugy">
+                <div class="text">
+                    <a>Часто заказываемые услуги</a>
+                </div>
+                <div class="BlockCards">
+                    <div class="cart">
+                        <h3>Замена масла</h3>
+                        <img src="img/maslo.jpg" alt="usluga-avtoservisa">
+                        <p>Качественная замена масла и фильтров</p>
+                        <p>Цена: 1500 руб.</p>
+                        <button class="zapis">Записаться</button>
+                    </div>
+                    <div class="cart">
+                        <h3>Диагностика</h3>
+                        <img src="img/DA.jpg" alt="usluga-avtoservisa">
+                        <p>Полная диагностика вашего автомобиля</p>
+                        <p>Цена: 1000 руб.</p>
+                        <button class="zapis">Записаться</button>
+                    </div>
+                    <div class="cart">
+                        <h3>Замена томозов</h3>
+                        <img src="img/ZTormoz.jpg" alt="usluga-avtoservisa">
+                        <p>Ремонт тормозной системы</p>
+                        <p>Цена: 3000 руб.</p>
+                        <button class="zapis">Записаться</button>
+                    </div>
+                    <div id="booking-form" class="hidden">
+                        <h2>Запись на услугу</h2>
+                        <form id="form">
+                            <label for="name">Имя:</label>
+                            <input type="text" id="name" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required>
+                            <label for="service">Услуга:</label>
+                            <input type="text" id="service" readonly>
+                            <button type="submit">Отправить</button>
+                            <button type="button" id="close-form">Закрыть</button>
+                         </form>
+                    </div>
+                </div>
+            </div>
+            <div class="Otziv">
+                <h3>Отзывы клиентов</h3>
+                <div class="Comment">
+                <p>Иван П.</p>
+                <p class="coment">Отличный сервис! Быстро и качественно!</p>
+                </div>
+                <div class="Comment">
+                <p>Анна С.</p>
+                <p class="coment">Рекомендую всем! Профессионалы своего дела</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerblock">
+            <div class="fb1">
+                <h1>Контакты</h1>
+                <p>+7 (123) 456 78 99<br>
+                ул. Репина, 32, Екатеринбург</p>
+            </div>
+            <div class="fb1">
+                <h1>Режим работы</h1>
+                <p>Пн-пт: 10:00 - 20:00<br>
+                Сб: 11:00 - 17:00</p>
+            </div>
+            <div class="fb1">
+                <h1>Соц-сети</h1>
+                <div class="icons">
+                    <img src="img/vk.svg" alt="vk">
+                    <img src="img/wt.svg" alt="wt"> 
+                    <img src="img/tg.svg" alt="tg" > 
+                 </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

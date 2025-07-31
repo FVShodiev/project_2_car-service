@@ -1,0 +1,458 @@
+*{
+    letter-spacing: 1px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+
+header {
+    background: linear-gradient(133deg, rgba(44, 44, 46, 0.911) 59%, rgba(78, 79, 83, 0.751) 79%);
+    display: grid;
+    grid-template-columns: 5fr 2fr 1fr;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+.Logo img{
+    width: 100px;
+    scale: 2;
+    margin-left: 10vh;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button{
+    background: #3738391b;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.button:hover{
+    background: #373839a5;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 150px 150vh;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modalTitle{
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input {
+    width: 40vh;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 2vh;
+    background-color: #28a74653;
+    border:none;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #2188377e;
+}
+
+#toggleForm {
+    text-align: center;
+}
+
+.Block2{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 50vh;
+    margin-bottom: 50px;
+}
+
+.Block3{
+    background: url("../img/BG.jpg") no-repeat;
+    background-size: cover;
+    height: 50vh;
+    border-radius: 10px;
+    margin: 10px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.Block4{
+    background: #212121c1;
+    padding: 15px;
+    width: 500px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.servis{
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #33333399;
+    color: #fff;
+}
+
+.servis:hover{
+    background-color: #333;
+}
+
+iframe{
+    margin:10px;
+    width: 70vh;
+    height: 56.5vh;
+    border-radius: 10px;
+}
+.Block5{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.BlockCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:10px;
+}
+
+.text{
+    background-color:rgba(44, 44, 46, 0.911);
+    margin-left: 15px;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 30px;
+    margin: 30px;
+    margin-left: 60px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 65vh;
+}
+
+.cart{
+    background-color:rgba(44, 44, 46, 0.911);
+    width: 38vh;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    margin: 15px;
+    margin-left: 60px;
+}
+
+.cart h3{
+    color:#fff;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.cart img{
+    border-radius: 10px;
+    height: 25vh;
+    transition: .5s;
+    margin-bottom: 5px;
+}
+
+.cart img:hover{
+    scale: 1.1;
+}
+
+.cart p{
+    height: 8vh;
+    margin: 5px;
+}
+
+.cart button{
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom:10px;
+    background-color: #333;
+}
+
+.cart button:hover{
+    background-color: #b09b9b4f;
+}
+
+.Otziv{
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left:8vh;
+}
+
+.Otziv h3{
+    color: #fff;
+    text-align: center;
+    background-color: #212121c1;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Comment{
+    padding: 10px;
+    margin-top:10px ;
+    border-radius: 5px;
+    background-color: #212121c1;
+    color: #fff;
+    font-weight: 600;
+}
+
+.coment{
+    font-weight: 400;
+    color:black;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px 5px ;
+}
+
+footer {
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;   
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.footerblock{
+    margin-left: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10vh;
+}
+
+.icons img:hover{
+    transform: scale(1.2);
+}
+
+.fservis{
+    color:#fff;
+    font-size: 16px;
+    background: none;
+    padding: 5px;
+    border:none;
+    border-radius: 5px;
+}
+
+.fservis:hover{
+    background-color: #9b98984d;
+}
+
+.fb1 h1{
+    font-size: 25px;
+}
+
+.fb1 button{
+    font-size: 17px;
+}
+
+.fb1 p{
+    padding: 5px;
+}
+
+/* Страница услуги */
+
+.SBlockCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.adres{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 15px;
+    grid-column-gap: 5vh;
+    margin-left: 60px;
+}
+
+.adrescart{
+    color: #fff;
+    background-color: rgba(44, 44, 46, 0.911);
+    height: 25vh;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.adreskart iframe{
+    height: 25vh;
+    padding: 0;
+    margin: 0;
+    width: 50vh;
+}
+
+.hidden {
+    display: none;
+}
+
+#booking-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: white;
+    z-index: 1000;
+}
+
+#booking-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#booking-form label {
+    margin: 10px 0 5px;
+}
+
+#booking-form input {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+#close-form {
+    margin-top: 10px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/* Страница контакты */
+
+.contactblock{
+    display: grid;
+    grid-template-columns: 80vh 50vh;
+    color: #fff;
+}
+
+.obratsvaz{
+    border-radius: 10px;
+    margin-left: 10vh;
+    background-color: #333;
+}
+
+.obratsvaz button{
+    margin: 10px;
+    color: #fff;
+    width: 25vh;
+
+}
+
+.obratsvaz .container{
+    display: grid;
+    margin-left: 2vh;
+} 
+
+.obratsvaz h2{
+    text-align: center;
+}
+
+.obratsvaz textarea{
+    max-width: 60vh;
+}
+
+.container button{
+    max-height: 50vh;
+}
+
+.container-info{
+    width: 25vh;
+}
+
+.contaktcart{
+    border-radius: 10px;
+    margin-left: 2vh;
+    display: grid;
+    grid-gap: 2vh;
+    max-height: 50vh;
+}
+
+.cc{
+    background-color: #333;
+    text-align: center;
+    border-radius:10px;
+}
+
+.cc h1{
+    font-size: 24px;
+}
+
+.cc p{
+    margin: 2vh;
+}
+
+/* Адабтация  */
+@media (max-width: 1200px) {
+    .modal-content {
+        width: 200px;
+        margin: 150px 100vh;
+    }
+    .Block2{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+    .modal-content {
+        width: 150px;
+        margin: 200px 50vh;
+    }
+    .Block2{
+        grid-template-columns: 1fr;
+    }
+}

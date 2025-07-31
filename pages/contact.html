@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - АвтоХелп</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+    <header>
+        <div class="Logo"><img src="../img/Logo.png" alt="logo-avtoservisa"></div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="Profil" id="openModal">
+            <button class="button">Профиль</button>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle" class="modalTitle">Вход</h2>
+                <form id="authForm">
+                    <input type="text" id="username" placeholder="Имя пользователя" required>
+                    <input type="password" id="password" placeholder="Пароль" required>
+                    <button type="submit">Отправить</button>
+                    <p id="toggleForm">Нет аккаунта? <a href="#" id="switchToRegister">Зарегистрироваться</a></p>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div class="contactblock">
+        <div class="obratsvaz">
+            <h2>Свяжитесь с нами</h2>
+            <form id="contact-form" class="container">
+                <label for="name">Имя:</label>
+                <input class="container-info" type="text" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input  type="email" id="email" required>
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" required></textarea>
+                
+                <button  type="submit">Отправить</button>
+            </form>
+        </div>
+        <div class="contaktcart">
+            <div class="cc">
+                <h1>Контакты</h1>
+                <p>+7 (123) 456 78 99<br>
+                ул. Репина, 32, Екатеринбург</p>      
+            </div>
+            <div class="cc">
+                <h1>Режим работы</h1>
+                <p>Пн-пт: 10:00 - 20:00<br>
+                Сб: 11:00 - 17:00</p>       
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
