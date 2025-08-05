@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" href="https://img.icons8.com/ios/50/car-service.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://img.icons8.com/ios/50/car-service.png" type="image/x-icon">
+    <title>АвтоХелп</title>
+</head>
+
+<body>
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Наверх">&and;</button>
+    <nav class="navigaton">
+        <img src="img/logo.svg" alt="logo">
+        <div class="nav-toggle" id="nav-toggle">
+            ☰
+        </div>
+        <ul class="nav-list" id="nav-list">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/services.html">Уcлуги</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/contact.html">Контакты</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/login.html">Вход</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/registration.html ">Регистрация</a></li>
+        </ul>
+    </nav>
+
+    <div class="cards">
+        <div class="card-block">
+            <div class="card-body">
+                <div class="card-text">
+                    <h2 class="title-h1">Ваш надежный автосервис</h2>
+                    <p>Качественные услуги по ремонту и обслуживанию автомобилей</p>
+
+                    <a href="pages/services.html" class="btn">Посмотреть услуги</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-block">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34909.89766647752!2d60.528250098203976!3d56.848197656315136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16efe39cade11%3A0x475383a881a97544!2z0JDQktCi0J5IRUxQ!5e0!3m2!1sru!2sru!4v1732967486543!5m2!1sru!2sru"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <div class="title">
+        <p>Часто заказываемые услуги</p>
+    </div>
+    <div class="cards">
+        <div class="service-card">
+            <h3>Замена масла</h3>
+            <img src="img/services/oil change.jpg" alt="usluga-avtoservisa">
+            <p>Замена масла и фильтров</p>
+            <p>Цена: 1500 руб.</p>
+            <button class="zapis">Записаться</button>
+        </div>
+        <div class="service-card">
+            <h3>Диагностика</h3>
+            <img src="img/services/car diagnostics.jpg" alt="usluga-avtoservisa">
+            <p>Диагностика автомобиля</p>
+            <p>Цена: 1000 руб.</p>
+            <button class="zapis">Записаться</button>
+        </div>
+        <div class="service-card">
+            <h3>Замена томозов</h3>
+            <img src="img/services/brake replacement.jpg" alt="usluga-avtoservisa">
+            <p>Ремонт тормозной системы</p>
+            <p>Цена: 3000 руб.</p>
+            <button class="zapis">Записаться</button>
+        </div>
+    </div>
+
+    <div class="title">
+        <p>Отзывы клиентов</p>
+    </div>
+    <div class="cards">
+        <div class="Comment">
+            <p>Иванова Инна</p>
+            <p class="description">Отличный сервис! Быстро и качественно!</p>
+        </div>
+        <div class="Comment">
+            <p>Иванов Иван</p>
+            <p class="description">Рекомендую всем! Профессионалы своего дела</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-block">
+            <h3>Контакты</h3>
+            <p>+7 (123) 456 78 99<br>
+                ул. Репина, 32, Екатеринбург</p>
+        </div>
+        <div class="footer-block">
+            <h3>Режим работы</h3>
+            <p>Пн-пт: 10:00 - 20:00<br>
+                Сб: 11:00 - 17:00</p>
+        </div>
+    </footer>
+</body>
+<script src="assets/script.js"></script>
+
+</html>
